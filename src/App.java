@@ -1,3 +1,10 @@
+/* 
+    Instituto Tecnologico Nacional
+    Autor: Alan Edgar Bojorquez
+    Control: 24760204
+    Materia: Programacion Orientada a Objetos
+*/ 
+
 import java.awt.GridBagConstraints;
 import java.awt.CardLayout;
 import java.awt.GridBagLayout;
