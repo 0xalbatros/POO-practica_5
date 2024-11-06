@@ -13,9 +13,9 @@ public abstract class Vehiculo {
         StringBuilder html = new StringBuilder();
 
         html.append(String.format("<tr %s>", Styles.TR.css));
-        html.append(String.format("<td %s>%s</td>", Styles.TD.css, this.marca));
-        html.append(String.format("<td %s>%d</td>", Styles.TD.css, this.precios.get("Semana")));
-        html.append(String.format("<td %s>%d</td>", Styles.TD.css, this.precios.get("Dia")));
+        html.append(String.format("<td %s>%s</td>", Styles.TD.css, String.format("%s %s Antiguedad: %s años", this.marca, this.color, this.antiguedad.getYears())));
+        html.append(String.format("<td %s>$ %d</td>", Styles.TD.css, this.precios.get("Semana")));
+        html.append(String.format("<td %s>$ %d</td>", Styles.TD.css, this.precios.get("Dia")));
         html.append("</tr>");
 
         return html.toString();

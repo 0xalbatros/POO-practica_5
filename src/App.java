@@ -92,7 +92,7 @@ public class App {
         JPanel component = new JPanel();
         StringBuilder html = new StringBuilder();
 
-        html.append(String.format("<html><table %s'>", Styles.TABLE));
+        html.append(String.format("<html><h4>%s</h4><table %s'>", name, Styles.TABLE));
         html.append(String.format("<tr %s><th %s>Marca</th><th %s>Precio x semana</th><th %s>Precio x día</th></tr>", Styles.TR.css, Styles.TH.css, Styles.TH.css, Styles.TH.css));
         html.append(content);
         html.append("</table></html>");
@@ -151,7 +151,7 @@ public class App {
             preciosMotoshtml.append(moto.getPrices());
         });
 
-        App app = new App(400, 550, "src\\assets\\icon.png", "Renta de vehículos", "Made with &#10084; by 0xCamax");
+        App app = new App(600, 560, "src\\assets\\icon.png", "Renta de vehículos", "Made with &#10084; by 0xCamax");
         app.setNavBtn("Autos", "Precios Autos");
         app.setNavBtn("Bicicleta", "Precios Bicicletas");
         app.setNavBtn("Moto", "Precios Motos");
